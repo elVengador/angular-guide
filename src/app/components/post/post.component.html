@@ -1,0 +1,21 @@
+<div class="post-wrapper">
+  <div class="post-info">
+    <h1>{{post.title}}</h1>
+    <p><b>Autor:</b>{{post.author}}</p>
+    <p *ngIf="post.date"><b>Date:</b>{{post.date}}</p>
+    <div>
+      <span *ngFor="let tag of post.tags" class="tag-item">{{tag | tag:2:"$"}}</span>
+    </div>
+  </div>
+  <p class="post-content">
+    {{post.content}}
+  </p>
+  <div class="post-suggestions">
+    <h3>Some Suggestions:</h3>
+    <div *ngFor="let suggestionItem of suggestedPosts" class="suggestion-item">
+      <h4>{{suggestionItem.title}}</h4>
+      <p>Author:{{suggestionItem.author}}</p>
+      <p>Date:{{suggestionItem.date}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+.post-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.post-info {
+  text-align: center;
+}
+
+.post-content {
+  font-size: 20px;
+}
+
+.tag-item {
+  padding: 10px;
+}
+
+.post-suggestions {
+  padding: 5px;
+  background: rgb(37, 37, 37);
+  color: whitesmoke;
+}
+
+.suggestion-item {
+  border: dashed 2px rgb(69, 93, 163);
+  min-width: 300px;
+  padding: 10px;
+}
+
+.suggestion-item h4 {
+  margin: 0px;
+  color: rgb(69, 93, 163);
+}
